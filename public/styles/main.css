@@ -1,0 +1,136 @@
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.45;
+}
+
+h1 {
+  margin-bottom: 0;
+  font-weight: 600;
+  font-size: 2.4em;
+}
+
+h2 {
+  margin-top: 0.25em;
+  font-size: 1.8em;
+  font-weight: 600;
+}
+
+h3 {
+  margin-bottom: 0.25em;
+  font-weight: 400;
+  font-size: 1.5em;
+}
+
+h4 {
+  margin: 0 0 0.75em;
+  font-weight: 600;
+}
+
+h5 {
+  font-weight: 300;
+  font-size: 1.5em;
+}
+
+a:link, a:visited, a:active {
+  color: black;
+}
+
+a:hover {
+  color: blue;
+}
+
+header, .container {
+  padding: 0 2em 1em;
+  margin: 0 auto;
+  max-width: 32em;
+}
+
+header {
+  max-width: auto;
+  padding: 2em;
+}
+
+footer {
+  padding-top: 3em;
+}
+
+.contact-details__phone {
+  display: none;
+}
+
+.experience__toggle {
+  color: black;
+  text-decoration: underline;
+  cursor: pointer;
+  padding-top: 1em;
+  display: none;
+}
+
+.experience__toggle:hover {
+  color: blue;
+}
+
+.experience__toggle--more::before {
+  content: 'More ';
+}
+
+.experience__toggle--less::before {
+  content: 'Less ';
+}
+
+.experience__toggle--more::after {
+  content: ' →';
+}
+
+.experience__toggle--less::after {
+  content: ' ←';
+}
+
+.library i {
+  color: #bbb;
+  font-style: normal;
+}
+
+.cf:before,
+.cf:after {
+  content: " "; /* 1 */
+  display: table; /* 2 */
+}
+
+.cf:after {
+  clear: both;
+}
+
+@media (min-width: 70em) {
+  header {
+    text-align: center;
+  }
+
+  .container {
+    width: 62em;
+    max-width: 100%;
+  }
+
+  .tech-and-skills {
+    padding-right: 1em;
+  }
+
+  .tech-and-skills__skills {
+    padding-top: 0.5em;
+  }
+
+  .experience {
+    padding-left: 1em;
+  }
+
+  .tech-and-skills, .experience, .library {
+    width: 30em;
+    float: left;
+  }
+  
+}
+
+@media (max-width: 25em) {
+  body { font-size: 80%; }
+}
