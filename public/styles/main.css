@@ -92,13 +92,13 @@ footer {
   font-style: normal;
 }
 
-.cf:before,
-.cf:after {
+.container:before,
+.container:after {
   content: " "; /* 1 */
   display: table; /* 2 */
 }
 
-.cf:after {
+.container:after {
   clear: both;
 }
 
