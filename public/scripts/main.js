@@ -9,8 +9,4 @@
     $(this).toggleClass(toggle_classes);
     $experience.toggle();
   });
-
-  if (jQuery.browser.mobile) {
-    $('.contact-details__phone').show();
-  }
 }());

@@ -40,7 +40,7 @@ a:hover {
   color: blue;
 }
 
-header, .container {
+header, main, footer {
   padding: 0 2em 1em;
   margin: 0 auto;
   max-width: 32em;
@@ -48,15 +48,16 @@ header, .container {
 
 header {
   max-width: auto;
-  padding: 2em;
+  padding: 1em 2em;
 }
 
 footer {
-  padding-top: 3em;
+  padding-top: 1em;
+  padding-bottom: 2em;
 }
 
-.contact-details__phone {
-  display: none;
+section + section {
+  margin-top: 2em;
 }
 
 .experience__toggle {
@@ -92,22 +93,33 @@ footer {
   font-style: normal;
 }
 
-.container:before,
-.container:after {
+main:before,
+main:after {
   content: " "; /* 1 */
   display: table; /* 2 */
 }
 
-.container:after {
+main:after {
   clear: both;
 }
 
 @media (min-width: 70em) {
   header {
     text-align: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
   }
 
-  .container {
+  footer {
+    text-align: center;
+    padding-top: 2em;
+  }
+
+  section + section {
+    margin-top: 0;
+  }
+
+  main {
     width: 62em;
     max-width: 100%;
   }
@@ -122,13 +134,14 @@ footer {
 
   .experience {
     padding-left: 1em;
+    margin-top: 0;
   }
 
   .tech-and-skills, .experience, .library {
     width: 30em;
     float: left;
   }
-  
+
 }
 
 @media (max-width: 25em) {
