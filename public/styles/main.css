@@ -142,6 +142,10 @@ main:after {
     float: left;
   }
 
+  .contact-details__email {
+    margin-bottom: 2em;
+  }
+
 }
 
 @media (max-width: 70em) and (min-width: 44em) {
