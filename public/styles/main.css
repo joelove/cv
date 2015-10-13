@@ -47,7 +47,6 @@ header, main, footer {
 }
 
 header {
-  max-width: auto;
   padding: 1em 2em;
 }
 
@@ -120,12 +119,17 @@ main:after {
   }
 
   main {
-    width: 62em;
+    width: 64em;
     max-width: 100%;
   }
 
-  .tech-and-skills {
-    padding-right: 1em;
+  .contact-details {
+    margin-bottom: 1em;
+  }
+
+  .contact-details__email, .contact-details__phone {
+    margin-top: 0.5em;
+    display: block;
   }
 
   .tech-and-skills__skills {
@@ -135,9 +139,10 @@ main:after {
   .experience {
     padding-left: 1em;
     margin-top: 0;
+    margin-right: 3em;
   }
 
-  .tech-and-skills, .experience, .library {
+  .summary, .tech-and-skills, .experience, .library {
     width: 30em;
     float: left;
   }
