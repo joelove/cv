@@ -1,0 +1,20 @@
+{
+  "name": "joelove",
+  "version": "1.0.0",
+  "description": "Joe Love's online CV",
+  "main": "public/index.html",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:joelove/cv.git"
+  },
+  "author": "Joe Love",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/joelove/cv/issues"
+  },
+  "homepage": "http://cv.joelove.uk",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-less": "^1.0.1"
+  }
+}
