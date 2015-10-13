@@ -1,35 +1,44 @@
 body {
   margin: 0;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "proxima-nova", sans-serif;
+  font-style: normal;
+  font-weight: 400;
   line-height: 1.45;
+  color: rgb(20, 20, 20);
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: "ff-tisa-sans-web-pro", sans-serif;
+  font-weight: 400;
+  /*font-style: italic;*/
 }
 
 h1 {
   margin-bottom: 0;
-  font-weight: 600;
-  font-size: 2.4em;
+  font-size: 3.2em;
 }
 
 h2 {
-  margin-top: 0.25em;
-  font-size: 1.8em;
-  font-weight: 600;
+  margin-top: 0.25rem;
+  font-size: 2.2em;
 }
 
 h3 {
-  margin-bottom: 0.25em;
-  font-weight: 400;
-  font-size: 1.5em;
+  font-style: italic;
+  margin-bottom: 0.25rem;
+  font-size: 1.4em;
 }
 
 h4 {
   margin: 0 0 0.75em;
-  font-weight: 600;
 }
 
 h5 {
-  font-weight: 300;
-  font-size: 1.5em;
+  font-size: 1.4em;
+}
+
+section + section {
+  margin-top: 2rem;
 }
 
 a:link, a:visited, a:active {
@@ -40,23 +49,80 @@ a:hover {
   color: blue;
 }
 
-header, main, footer {
-  padding: 0 2em 1em;
-  margin: 0 auto;
-  max-width: 32em;
+.main:before, .main:after,
+.header:before, .header:after {
+  content: " "; /* 1 */
+  display: table; /* 2 */
 }
 
-header {
+.main:after,
+.header:after {
+  clear: both;
+}
+
+@media not screen {
+  .header { display: none; }
+}
+
+.header {
+  background-color: rgb(0, 0, 40);
+  height: 4rem;
+}
+
+.header__tools {
+  list-style-type: none;
+  margin: 0 2rem 0 0;
+  float: right;
+}
+
+.header__tool {
+  font-size: 2rem;
+  display: inline-block;
+  padding: 0;
+  margin: 0 0 0 1.5rem;
+}
+
+.header__tool a {
+  color: white;
+}
+
+.header__tool .header__tool-icon {
+  line-height: 4rem;
+}
+
+.header__tool .header__tool-title {
+  position: absolute;
+  right: 2rem;
+  top: 5rem;
+  line-height: 3rem;
+  border-radius: 1.5rem 0 1.5rem 1.5rem;
+  padding: 0 1.5rem;
+  background-color: rgb(0, 0, 40);
+  color: white;
+  font-size: 1rem;
+}
+
+.header__tool a:hover .header__tool-title {
+  display: block;
+}
+
+.header__tool-title {
+  display: none;
+}
+
+.my-details, .main, .footer {
+  padding: 0 2em 1em;
+  margin: 0 auto;
+  max-width: 30em;
+}
+
+.my-details {
   padding: 1em 2em;
 }
 
-footer {
+.footer {
   padding-top: 1em;
   padding-bottom: 2em;
-}
-
-section + section {
-  margin-top: 2em;
 }
 
 .experience__toggle {
@@ -92,24 +158,14 @@ section + section {
   font-style: normal;
 }
 
-main:before,
-main:after {
-  content: " "; /* 1 */
-  display: table; /* 2 */
-}
-
-main:after {
-  clear: both;
-}
-
-@media (min-width: 70em) {
-  header {
+@media (min-width: 70rem) {
+  .my-details {
     text-align: center;
     padding-top: 1em;
     padding-bottom: 1em;
   }
 
-  footer {
+  .footer {
     text-align: center;
     padding-top: 2em;
   }
@@ -118,7 +174,7 @@ main:after {
     margin-top: 0;
   }
 
-  main {
+  .main {
     width: 64em;
     max-width: 100%;
   }

@@ -8,7 +8,36 @@
 </head>
 <body>
 
-<header>
+<header class="header">
+  <ul class="header__tools">
+    <li class="header__tool header__tool-stackoverflow">
+      <a href="#">
+        <i class="header__tool-icon fa fa-stack-overflow"></i>
+        <span class="header__tool-title">StackOverflow</span>
+      </a>
+    </li>
+    <li class="header__tool header__tool-linkedin">
+      <a href="#">
+        <i class="header__tool-icon fa fa-linkedin"></i>
+        <span class="header__tool-title">LinkedIn</span>
+      </a>
+    </li>
+    <li class="header__tool header__tool-github">
+      <a href="#">
+        <i class="header__tool-icon fa fa-github-alt"></i>
+        <span class="header__tool-title">GitHub</span>
+      </a>
+    </li>
+    <li class="header__tool header__tool-pdf">
+      <a href="#">
+        <i class="header__tool-icon fa fa-file-pdf-o"></i>
+        <span class="header__tool-title">Download as PDF</span>
+      </a>
+    </li>
+  </ul>
+</header>
+
+<div class="my-details">
   <h1>Joe Love</h1>
   <h2>Curriculum Vitae</h2>
 
@@ -25,9 +54,9 @@
     <a href="mailto:jobs@joelove.uk" class="contact-details__email">jobs@joelove.uk</a>
     <a href="tel:+447923679803" class="contact-details__phone">+44 (0) 7923&nbsp;679&nbsp;803</a>
   </div>
-</header>
+</div>
 
-<main>
+<main class="main">
   <section class="experience">
     <h2 class="experience__title">Experience</h2>
 
@@ -163,11 +192,14 @@
   </section>
 </main>
 
-<footer>
+<footer class="footer">
 </footer>
 
-<link rel="stylesheet" property="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600">
 <link rel="stylesheet" property="stylesheet" href="styles/main.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+<script src="https://use.typekit.net/glh2wye.js"></script>
+<script>try{Typekit.load({ async: true });}catch(e){}</script>
 
 <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
 <script src="scripts/browser.js"></script>
