@@ -3,16 +3,16 @@ module.exports = function(grunt) {
         less: {
             development: {
                 options: {
-                    paths: ["public/css"]
+                    paths: ["public"]
                 },
-                files: { "public/css/main.css": "assets/less/main.less" }
+                files: { "public/style.css": "assets/less/main.less" }
             },
             production: {
                 options: {
-                    paths: ["public/css"],
+                    paths: ["public"],
                     cleancss: true
                 },
-                files: { "public/css/main.css": "assets/less/main.less" }
+                files: { "public/style.css": "assets/less/main.less" }
             }
         }
     });
