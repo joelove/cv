@@ -4,7 +4,13 @@ body {
   font-style: normal;
   font-weight: 400;
   line-height: 1.45;
-  color: rgb(20, 20, 20);
+  color: rgb(40, 40, 40);
+}
+
+@media not screen {
+  body {
+    color: black;
+  }
 }
 
 h1, h2, h3, h4, h5 {
@@ -65,7 +71,7 @@ a:hover {
 }
 
 .header {
-  background-color: rgb(0, 0, 40);
+  background-color: rgb(40, 40, 40);
   height: 4rem;
 }
 
