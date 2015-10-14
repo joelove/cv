@@ -4,6 +4,10 @@ module.exports = function(grunt) {
       development: {
         files: { "public/style.css": "assets/less/*.less" }
       }
+    },
+    watch: {
+      files: ['assets/less/*.less'],
+      tasks: ['less']
     }
   });
 
