@@ -1,7 +1,4 @@
 module.exports = function(grunt) {
-  var wkhtmltopdf = require('wkhtmltopdf');
-  var fs = require('fs');
-
   grunt.initConfig({
     less: {
       development: {
@@ -10,11 +7,11 @@ module.exports = function(grunt) {
           yuicompress: true,
           optimization: 2
         },
-        files: { 'public/style.css': 'assets/less/*.less' }
+        files: { 'public/style.css': 'assets/less/**/*.less' }
       }
     },
     watch: {
-      files: ['assets/less/*.less'],
+      files: ['assets/less/**/*.less'],
       tasks: ['less']
     },
     wkhtmltopdf: {
