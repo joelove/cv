@@ -18,7 +18,6 @@ h4,
 h5 {
   font-family: "ff-tisa-sans-web-pro", sans-serif;
   font-weight: 400;
-  /*font-style: italic;*/
 }
 h1 {
   margin-bottom: 0;
@@ -55,9 +54,7 @@ a:hover {
 .header:before,
 .header:after {
   content: " ";
-  /* 1 */
   display: table;
-  /* 2 */
 }
 .main:after,
 .header:after {
