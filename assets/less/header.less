@@ -1,0 +1,66 @@
+.header:before, .header:after {
+  content: " ";
+  display: table;
+}
+
+.header:after {
+  clear: both;
+}
+
+.header {
+  padding: 1em 2em 0;
+  margin: 0 auto;
+  height: 4rem;
+  max-width: 30em;
+}
+
+.header__tools {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.header__tool {
+  font-size: 2rem;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+
+.header__tool + .header__tool {
+  margin-left: 1.5rem;
+}
+
+.header__tool .header__tool-icon {
+  line-height: 4rem;
+}
+
+.header__tool .header__tool-title {
+  position: absolute;
+  top: 5rem;
+  line-height: 3rem;
+  border-radius: 0 1.5rem 1.5rem;
+  padding: 0 1.5rem;
+  background-color: blue;
+  color: white;
+  font-size: 1rem;
+}
+
+.header__tool a:hover .header__tool-title {
+  display: block;
+}
+
+.header__tool-title {
+  display: none;
+}
+
+@media (min-width: 70em) {
+  .header {
+    width: 64em;
+    max-width: 100%;
+  }
+
+  .header__tools {
+    margin: 0 .5rem;
+  }
+}

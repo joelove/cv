@@ -1,197 +1,21 @@
-body {
-  margin: 0;
-  font-family: "proxima-nova", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 1.45;
-  color: rgb(40, 40, 40);
-}
-
-@media not screen {
-  body {
-    color: black;
-  }
-}
-
-h1, h2, h3, h4, h5 {
-  font-family: "ff-tisa-sans-web-pro", sans-serif;
-  font-weight: 400;
-}
-
-h1 {
-  margin-bottom: 0;
-  font-size: 3.2em;
-}
-
-h2 {
-  margin-top: 0.25rem;
-  font-size: 2.2em;
-}
-
-h3 {
-  font-style: italic;
-  margin-bottom: 0.25rem;
-  font-size: 1.4em;
-}
-
-h4 {
-  margin: 0 0 0.75em;
-}
-
-h5 {
-  font-size: 1.4em;
-}
-
-section + section {
-  margin-top: 2rem;
-}
-
-a:link, a:visited, a:active {
-  color: black;
-}
-
-a:hover {
-  color: blue;
-}
-
-.main:before, .main:after,
-.header:before, .header:after {
+.main:before, .main:after {
   content: " ";
   display: table;
 }
 
-.main:after,
-.header:after {
+.main:after {
   clear: both;
 }
 
-@media not screen {
-  .header { display: none; }
-}
-
-.header {
-  padding: 1em 2em 0;
-  margin: 0 auto;
-  height: 4rem;
-  max-width: 30em;
-}
-
-.header__tools {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-
-@media (min-width: 70em) {
-  .header__tools {
-    margin: 0 .5rem;
-  }
-}
-
-.header__tool {
-  font-size: 2rem;
-  display: inline-block;
-  margin: 0;
-  padding: 0;
-}
-
-.header__tool + .header__tool {
-  margin-left: 1.5rem;
-}
-
-.header__tool .header__tool-icon {
-  line-height: 4rem;
-}
-
-.header__tool .header__tool-title {
-  position: absolute;
-  top: 5rem;
-  line-height: 3rem;
-  border-radius: 0 1.5rem 1.5rem;
-  padding: 0 1.5rem;
-  background-color: blue;
-  color: white;
-  font-size: 1rem;
-}
-
-.header__tool a:hover .header__tool-title {
-  display: block;
-}
-
-.header__tool-title {
-  display: none;
-}
-
-.my-details, .main {
+.main {
   padding: 0 2em 1em;
   margin: 0 auto;
   max-width: 30em;
 }
 
-.my-details {
-  padding: 1em 2em;
-}
-
-.footer {
-  padding-top: 1em;
-  padding-bottom: 2em;
-}
-
-.library i {
-  color: #bbb;
-  font-style: normal;
-}
-
 @media (min-width: 70em) {
-  .my-details {
-    text-align: center;
-    padding-top: 1em;
-    padding-bottom: 1em;
-  }
-
-  .footer {
-    text-align: center;
-    padding-top: 2em;
-  }
-
-  section + section {
-    margin-top: 0;
-  }
-
-  .main, .header {
+  .main {
     width: 64em;
     max-width: 100%;
   }
-
-  .contact-details {
-    margin-bottom: 1em;
-  }
-
-  .contact-details__email, .contact-details__phone {
-    margin-top: 0.5em;
-    display: block;
-  }
-
-  .tech-and-skills__skills {
-    padding-top: 0.5em;
-  }
-
-  .experience {
-    margin-top: 0;
-    margin-right: 4em;
-  }
-
-  .summary, .tech-and-skills, .experience, .library {
-    width: 30em;
-    float: left;
-  }
-
-}
-
-@media (max-width: 70em) and (min-width: 44em) {
-  body { font-size: 120% }
-}
-
-@media (max-width: 25em) {
-  body { font-size: 80%; }
 }
