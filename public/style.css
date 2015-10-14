@@ -120,28 +120,6 @@ a:hover {
   padding-top: 1em;
   padding-bottom: 2em;
 }
-.experience__toggle {
-  color: black;
-  text-decoration: underline;
-  cursor: pointer;
-  padding-top: 1em;
-  display: none;
-}
-.experience__toggle:hover {
-  color: blue;
-}
-.experience__toggle--more::before {
-  content: 'More ';
-}
-.experience__toggle--less::before {
-  content: 'Less ';
-}
-.experience__toggle--more::after {
-  content: ' →';
-}
-.experience__toggle--less::after {
-  content: ' ←';
-}
 .library i {
   color: #bbb;
   font-style: normal;
