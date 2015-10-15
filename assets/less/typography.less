@@ -5,21 +5,17 @@ body {
   font-weight: 400;
   line-height: 1.45;
   color: #36414d;
-}
 
-// body {
-//   background: repeating-linear-gradient(0deg, rgba(0,0,0,0) 0, rgba(0,0,0,0) 1.35em, rgba(0,0,0,0.2) 1.44em);
-//   background-position: 0 0;
-// }
+  // background: repeating-linear-gradient(0deg, rgba(0,0,0,0) 0, rgba(0,0,0,0) 1.35em, rgba(0,0,0,0.2) 1.44em);
+  // background-position: 0 0;
 
-@media not screen {
-  body {
+  @media not screen {
     color: black;
   }
-}
 
-@media (max-width: 25em) {
-  body { font-size: 0.8em }
+  @media (max-width: 25em) {
+    font-size: 0.8em;
+  }
 }
 
 p {
@@ -66,17 +62,17 @@ ul {
   margin: 0;
   padding: 0.35rem 0 1.1rem;
   line-height: 1.45rem;
-}
 
-ul > li {
-  margin: 0;
-  padding: 0;
-  margin-left: 2.9rem;
-  line-height: 1.45rem;
-}
+  li {
+    margin: 0;
+    padding: 0;
+    margin-left: 2.9rem;
+    line-height: 1.45rem;
 
-ul > li > ul {
-  padding: 0;
+    ul {
+      padding: 0;
+    }
+  }
 }
 
 time {
