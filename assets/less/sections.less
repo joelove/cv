@@ -1,9 +1,9 @@
 @media (min-width: 70em) {
-  .summary, .tech-and-skills, .experience, .library {
+  .summary, .tech-and-skills, .experience, .library, .links {
     width: 30em;
   }
 
-  .summary, .tech-and-skills, .library {
+  .summary, .tech-and-skills, .library, .links {
     float: left;
     clear: left;
   }
@@ -13,5 +13,28 @@
     right: 0;
     top: 0;
     padding-bottom: 5rem;
+  }
+}
+
+.links {
+  ul {
+    list-style-type: none;
+    padding: 0;
+
+    li {
+      margin-left: 1.5rem;
+      margin-bottom: 1.45rem;
+      height: 1.45rem;
+
+      i.fa {
+        line-height: 1.45rem;
+        font-size: 1.5rem;
+        margin-right: .5rem;
+      }
+    }
+  }
+
+  @media print {
+    display: none;
   }
 }
