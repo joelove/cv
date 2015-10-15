@@ -1,20 +1,16 @@
-.library i {
-  color: #bbb;
-  font-style: normal;
-}
-
 @media (min-width: 70em) {
-  section + section {
-    margin-top: 0;
+  .summary, .tech-and-skills, .experience, .library {
+    width: 30em;
+  }
+
+  .summary, .tech-and-skills, .library {
+    float: left;
+    clear: left;
   }
 
   .experience {
-    margin-top: 0;
-    margin-right: 4em;
-  }
-
-  .summary, .tech-and-skills, .experience, .library {
-    width: 30em;
-    float: left;
+    position: absolute;
+    right: 0;
+    top: 0;
   }
 }
