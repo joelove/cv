@@ -1,0 +1,49 @@
+.main {
+  display: flex;
+  max-width: 30em;
+  padding: 0 2rem;
+  margin: 0 auto 3rem;
+  flex-direction: column;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+}
+
+.summary {
+  .section;
+  order: 1;
+}
+
+.technology {
+  .section;
+  order: 2;
+}
+
+.experience {
+  .section;
+  order: 3;
+}
+
+.links {
+  .section;
+  order: 4;
+}
+
+@media (min-width: 70em), print {
+  .main {
+    display: block;
+    max-width: 66em;
+    column-count: 2;
+    column-gap: 2em;
+
+    & > * {
+      break-inside: avoid;
+    }
+  }
+
+  .section {
+    display: block;
+  }
+}

@@ -7,12 +7,21 @@ module.exports = function(grunt) {
           yuicompress: true,
           optimization: 2
         },
-        files: { 'public/style.css': 'assets/less/**/*.less' }
+        files: {
+          'public/style.css': 'src/less/**/*.less'
+        }
+      }
+    },
+    jade: {
+      development: {
+        files: {
+          'public/index.html': 'src/jade/index.jade'
+        }
       }
     },
     watch: {
-      files: ['assets/less/**/*.less'],
-      tasks: ['less']
+      files: ['src/less/**/*.less', 'src/jade/**/*.jade'],
+      tasks: ['less', 'jade']
     },
     wkhtmltopdf: {
       dev: {
@@ -24,9 +33,10 @@ module.exports = function(grunt) {
 
   grunt.loadNpmTasks('grunt-contrib-less');
   grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-contrib-jade');
   grunt.loadNpmTasks('grunt-wkhtmltopdf');
 
-  grunt.registerTask('default', ['less']);
+  grunt.registerTask('default', ['less', 'jade']);
   grunt.registerTask('pdf', ['wkhtmltopdf']);
-  grunt.registerTask('all', ['less', 'wkhtmltopdf']);
+  grunt.registerTask('all', ['less', 'jade', 'wkhtmltopdf']);
 };
