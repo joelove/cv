@@ -15,7 +15,7 @@ module.exports = function(grunt) {
     jade: {
       development: {
         files: {
-          'public/index.html': 'src/jade/**/*.jade'
+          'public/index.html': 'src/jade/index.jade'
         }
       }
     },
