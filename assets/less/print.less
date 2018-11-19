@@ -1,7 +1,16 @@
+.print-label {
+  display: none;
+  font-size: 8pt;
+}
+
 @media print {
   body {
-    font-size: 16pt;
+    font-size: 10pt;
     color: black;
+  }
+
+  .print-label {
+    display: inline-block;
   }
 
   .links {
