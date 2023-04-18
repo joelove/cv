@@ -7,11 +7,14 @@
       height: 1.5rem;
       line-height: 1.5rem;
       display: flex;
-      padding: 0.5rem 0 1rem 1.5rem;
+      padding: 0.5rem 0 1rem 0.25rem;
       margin: 0;
 
       @media (max-width: 25rem), print {
         padding-left: 0;
+        a {
+          pointer-events: none;
+        }
       }
 
       i.fa {
