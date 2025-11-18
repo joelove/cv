@@ -1,3 +1,5 @@
+include tag_hues
+
 -
   var hashHue = function(s) {
     var h = 0;
@@ -10,6 +12,6 @@
 
 mixin tag(name)
   - var t = String(name || '')
-  - var hue = hashHue(t)
+  - var hue = (typeof TAG_HUE_BY_NAME !== 'undefined' && TAG_HUE_BY_NAME[t] !== undefined) ? TAG_HUE_BY_NAME[t] : hashHue(t)
   span(style='--tag-hue: #{hue}')= t
 
