@@ -36,10 +36,15 @@
   order: 5;
 }
 
-@media (min-width: 72em), print {
+.experience-item {
+  break-inside: avoid;
+  margin-bottom: 1.5rem;
+}
+
+@media (min-width: 86em), print {
   .main {
     display: block;
-    max-width: 66em;
+    max-width: 60em;
     column-count: 2;
     column-gap: 2em;
 
@@ -50,9 +55,5 @@
 
   .section {
     display: block;
-  }
-
-  .experience-item {
-    break-inside: avoid;
   }
 }

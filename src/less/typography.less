@@ -12,20 +12,20 @@ body {
 }
 
 p {
-  padding: .5rem 0 1rem;
-  margin: 0;
+  padding: 0;
+  margin: .5rem 0 1rem;
 }
 
 h1, h2, h3, h4, h5 {
   font-family: "ff-tisa-sans-web-pro", sans-serif;
-  font-weight: 400;
+  font-weight: 500;
   padding: 0;
   margin: 0;
 }
 
 h1 {
   font-size: 2.8em;
-  padding: 1.2rem 0 .3rem;
+  padding: 1.1rem 0 .3rem;
 
   @media (max-width: 25rem) {
     padding: 1.45rem 0 .05rem;
@@ -80,11 +80,18 @@ ul {
 
     span {
       background-color: #eee;
+      background-color: hsl(var(--tag-hue, 210) 60% 92%);
       line-height: 1.5rem;
       padding: 0 0.5rem;
       margin-right: 0.5rem;
       display: inline-block;
-      border-radius: 0.75rem;
+      border-radius: 0.5rem;
     }
   }
+}
+
+time {
+  display: inline-block;
+  padding: 0 0.5rem;
+  color: #888;
 }

@@ -1,0 +1,15 @@
+-
+  var hashHue = function(s) {
+    var h = 0;
+    if (!s) return 0;
+    for (var i = 0; i < s.length; i++) {
+      h = (h * 31 + s.charCodeAt(i)) >>> 0;
+    }
+    return h % 360;
+  };
+
+mixin tag(name)
+  - var t = String(name || '')
+  - var hue = hashHue(t)
+  span(style='--tag-hue: #{hue}')= t
+
