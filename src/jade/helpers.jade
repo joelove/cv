@@ -13,5 +13,9 @@ include tag_hues
 mixin tag(name)
   - var t = String(name || '')
   - var hue = (typeof TAG_HUE_BY_NAME !== 'undefined' && TAG_HUE_BY_NAME[t] !== undefined) ? TAG_HUE_BY_NAME[t] : hashHue(t)
-  span(style='--tag-hue: #{hue}')= t
+  if t
+    span(style='--tag-hue: #{hue}')= t
+  else
+    span(style='--tag-hue: #{hue}')
+      block
 

@@ -54,6 +54,21 @@ h4 {
   font-size: 1.4em;
   padding: 0;
   margin: .3rem 0 -.3rem;
+
+  // Inline tags beside company names
+  span {
+    background-color: hsl(var(--tag-hue, 210) 60% 92%);
+    line-height: 1.5rem;
+    padding: 0 0.5rem;
+    margin-left: 0.5rem;
+    display: inline-block;
+    border-radius: 0.5rem;
+  }
+
+  // Hide empty placeholders until populated
+  span:empty {
+    display: none;
+  }
 }
 
 h5 {
