@@ -71,6 +71,8 @@ h4 {
     margin-bottom: -0.25rem;
     display: inline-block;
     transform: translateY(-2px);
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
 
     &::before {
       content: "";
@@ -80,6 +82,8 @@ h4 {
       background-color: hsl(var(--tag-hue, 210) 25% 90%);
       transform: skewX(-20deg);
       transform-origin: left center;
+      -webkit-print-color-adjust: exact !important;
+      print-color-adjust: exact !important;
     }
   }
 
